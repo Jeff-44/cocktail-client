@@ -1,4 +1,4 @@
-#Random Cocktail Preparation App
+##Random Cocktail Preparation App
 
 This is a client application that consumes 
 the CocktailDB API 
@@ -7,7 +7,7 @@ Features:
 Retrieve the name of a random Cocktail with
 it's preparation and ingredients.
 
-#Installation and Execution 
+##Installation and Execution 
 1. Clone the project : git clone <url>
 2. Change to the root / working directory : cd <root>
 3. Install project packages by running the command : npm install 
