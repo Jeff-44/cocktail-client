@@ -1,4 +1,4 @@
-#Random Cocktail Preparation App
+##Random Cocktail Preparation App
 
 This is a client application that consumes 
 the CocktailDB API 
