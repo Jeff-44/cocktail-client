@@ -1,9 +1,17 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: rgb(135, 125, 125);
+
+.main{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgb(56, 32, 22),rgb(184, 67, 25));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
@@ -12,30 +20,93 @@ body{
     margin: 0 auto;
     padding: 30px;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     display: flex;
+    /* color: white; */
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(184, 67, 25);
+}
+
 
 .content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
+
+.content img{
+    width: 250px;
+    border: 2px solid rgb(184, 67, 25);
+    border-radius: 10px;
+}
+
+.content img:hover{
+    opacity: 0.6;
+    border-color: rgb(187, 92, 58);
+}
+
+.instructions{
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 button{
     display: inline-block;
-    width: 200px;
+    /* width: 200px; */
     padding: 10px 20px;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
     background-color: rgb(184, 67, 25);
     color: white;
+    font-size: 1.3rem;
 }
 
 button:hover{
     background-color: rgb(187, 92, 58);
     color: black;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    
+    /* border: 2px solid white; */
+    position: relative;
+    
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.theme1{
+    background-color: black;
+    color: white;
+}
+
+#theme{
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.toggle{
+    color: White;
+
+}
+
+.name{
+    color: rgb(200, 65, 17);
 }

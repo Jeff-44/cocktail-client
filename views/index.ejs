@@ -7,20 +7,31 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to the Random Cocktail Preparation App </h1>
-        
-        <div class="content">
-            <h2>Name: <%= response.strDrink %></h2>
-            <figure>
-                <img height="300" width="300" src="<%= response.strDrinkThumb %>" alt="drink image">
-            </figure>
-            <p>
-                <%= response.strInstructions %>
-            </p>
-            <button>Generate</button>
+    <div class="main">
+
+        <div class="container">
+            <h1 id="title" class="">Welcome to the Random Cocktail Preparation App </h1>
+            
+            <div class="content">
+                <h2 id="name" class=""><%= response.strDrink %></h2>
+                <figure>
+                    <img src="<%= response.strDrinkThumb %>" alt="drink image">
+                    <figcaption><small><%= response.strDrink %></small></figcaption>
+                    <p><small>Modified on <%= response.dateModified %></small></p>
+                </figure>
+
+                <h2>Preparation</h2>
+                <p class="instructions">
+                    <%= response.strInstructions %>
+                </p>
+                <button>Generate</button>
+                <button id="theme" class="">Theme</button>
+            </div>
         </div>
+        <footer>
+            <p>&copy; Jeff FORESTAL <%= new Date().getFullYear(); %></p>
+        </footer>
+        <script src="js/front.js"></script>
     </div>
-    <script src="js/front.js"></script>
 </body>
 </html>

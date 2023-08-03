@@ -8,8 +8,8 @@ Retrieve the name of a random Cocktail with
 it's preparation and ingredients.
 
 #Installation and Execution 
-1. Clone the project : git clone <url>
-2. Change to the root / working directory : cd <root>
+1. Clone the project : git clone https://github.com/Jeff-44/cocktail-client.git
+2. Change to the root / working directory (Public API) : cd "Public API"
 3. Install project packages by running the command : npm install 
 4. Run project locally : node index.js
 
