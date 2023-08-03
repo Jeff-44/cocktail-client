@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Random Cocktail Preparation App </h1>
+        
+        <div class="content">
+            <h2>Name: <%= response.strDrink %></h2>
+            <figure>
+                <img height="300" width="300" src="<%= response.strDrinkThumb %>" alt="drink image">
+            </figure>
+            <p>
+                <%= response.strInstructions %>
+            </p>
+            <button>Generate</button>
+        </div>
+    </div>
+    <script src="js/front.js"></script>
+</body>
+</html>
